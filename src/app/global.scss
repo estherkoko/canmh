@@ -1,0 +1,32 @@
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+$navbar-nav-link-padding-x: 1rem !default;
+$green: #39493B !default;
+$headings-color: #39493B !default;
+$body-color: #39493B !default;
+$line-height-base: 2 !default;
+$font-size-base: 1rem !default;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1180px
+) !default;
+
+
+// Required
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "../../node_modules/bootstrap/scss/type";
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+//
+
+.font-family-abril {
+    font-family: 'Abril Fatface', serif;
+}
