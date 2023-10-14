@@ -14,35 +14,35 @@ const countries = [
         socialMedia: '@shewriteswoman',
       },
       {
-        name: 'She writes woman',
+        name: 'She writes womafn',
         cause: 'Mental Health (Women)',
         phone: '0817-491-3329',
         website: 'www.shewriteswoman.org',
         socialMedia: '@shewriteswoman',
       },
       {
-        name: 'She writeswoman',
+        name: 'She writeswomang',
         cause: 'Mental Health (Women)',
         phone: '0817-491-3329',
         website: 'www.shewriteswoman.org',
         socialMedia: '@shewriteswoman',
       },
       {
-        name: 'She writes woman',
+        name: 'She writes womant',
         cause: 'Mental Health (Women)',
         phone: '0817-491-3329',
         website: 'www.shewriteswoman.org',
         socialMedia: '@shewriteswoman',
       },
       {
-        name: 'She writeswoman',
+        name: 'She writeswomang',
         cause: 'Mental Health (Women)',
         phone: '0817-491-3329',
         website: 'www.shewriteswoman.org',
         socialMedia: '@shewriteswoman',
       },
       {
-        name: 'She writes woman',
+        name: 'She writes womahn',
         cause: 'Mental Health (Women)',
         phone: '0817-491-3329',
         website: 'www.shewriteswoman.org',
@@ -54,7 +54,7 @@ const countries = [
     name: 'South Africa',
     organizations: [
       {
-        name: 'Shewriteswoman',
+        name: 'Shewriteswomanh',
         cause: 'Mental Health (Women)',
         phone: '0817-491-3329',
         website: 'www.shewriteswoman.org',
@@ -73,7 +73,7 @@ export default function Page() {
               <h2 className={`${abril.className} display-2 pt-5`}>DIRECTORY</h2>
               <p className="py-1">Below are some helpful resources. </p>
               {countries.map((country) => (
-                <table className='table table-striped my-5'>
+                <table className='table table-striped my-5' key={country.name}>
                   <tr className='bg-dark-green text-white'>
                     <td colSpan="3">{country.name}</td>
                   </tr>
@@ -84,7 +84,7 @@ export default function Page() {
                       <th>Contact</th>
                     </tr>
                     {country.organizations.map((organization) => (
-                      <tr>
+                      <tr key={organization.name}>
                         <td>{organization.name}</td>
                         <td className='d-none d-sm-block'>{organization.cause}</td>
                         <td>{organization.phone} {organization.website} {organization.socialMedia}</td>

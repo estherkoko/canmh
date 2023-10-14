@@ -52,7 +52,6 @@ export default function Home() {
               <a href="mailto:canmh.20@gmail.com" className="btn btn-success my-4">Get Involved</a>
             </div>
             <div className="col-md-6 text-end">
-              &nbsp;
               <img
                   src="/psych-bubble.png"
                   className='img-fluid'
@@ -71,7 +70,7 @@ export default function Home() {
             </div>
             <div className='col-md-6 px-4 py-2'>
               <h1 className={`${abril.className}`}>Sponsor <br/>this project</h1>
-              <p className="py-2">We need each other for this. During these trying times, kindly assist us in bringing enduring value to people's lives.</p>
+              <p className="py-2">{`We need each other for this. During these trying times, kindly assist us in bringing enduring value to people's lives.`}</p>
               <a href="mailto:canmh.20@gmail.com" className="btn btn-success">Become a sponsor</a>
             </div>
           </div>

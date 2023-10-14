@@ -33,11 +33,11 @@ export default function Page() {
                 <div className="col-md-6 p-4">
                   <img src='/dr_mercedes.JPG' className='img-fluid rounded-circle' width='300' />
                   <h2 className={`${abril.className} py-2`}>Dr. Mercedes Okosi</h2>
-                  <p>Dr. Mercedes J. Okosi is a bilingual (English/Spanish) New York State licensed clinical psychologist. She completed her Bachelor's degree in Applied Psychology at New York University with a minor in Spanish. </p>
+                  <p>{`Dr. Mercedes J. Okosi is a bilingual (English/Spanish) New York State licensed clinical psychologist. She completed her Bachelor's degree in Applied Psychology at New York University with a minor in Spanish. `}</p>
                   {readMore.mercedes && (
                     <>
                       <p>She earned her Doctor of Psychology (Psy.D.) at The Graduate School of Applied and Professional Psychology at Rutgers University with concentrations in Multicultural Psychology and Community Psychology.</p>
-                      <p>Dr. Okosi is currently the Clinical Director of the Safe Mothers, Safe Children Program at New York University's McSilver Institute for Poverty Policy and Research. SMSC is a clinical research program for women involved in child welfare systems who have PTSD, and their children. The participants are almost all Black and Latina women living in poverty who have experienced chronic complex trauma. Dr. Okosi is also in independent private practice, where she sees adult patients presenting with trauma, depression and other mood disorders, anxiety, and more. </p> 
+                      <p>{`Dr. Okosi is currently the Clinical Director of the Safe Mothers, Safe Children Program at New York University's McSilver Institute for Poverty Policy and Research. SMSC is a clinical research program for women involved in child welfare systems who have PTSD, and their children. The participants are almost all Black and Latina women living in poverty who have experienced chronic complex trauma. Dr. Okosi is also in independent private practice, where she sees adult patients presenting with trauma, depression and other mood disorders, anxiety, and more. `}</p> 
                       <p>Dr. Okosi has completed research at the intersection of trauma and race, and incorporates racial identity and social justice principles in her work. Her dissertation was a qualitative exploration of the impact of racial microaggressions in therapy.</p>
                     </>
                   )}
