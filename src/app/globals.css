@@ -128,11 +128,13 @@ a {
 .bg-green-mobile {
   background: none;
 }
+.hide-mobile {}
 
 @media only screen and (max-width: 600px) {
   .bg-green-mobile {
     background: #c5dcbb!important;
   }
+  .hide-mobile {display: none;}
 }
 
 
@@ -158,13 +160,17 @@ a {
 box-shadow: 1px 0px 42px -8px rgba(57,73,59,0.96);
 }
 
-.bg-people-discuss {
-  background-image: url('/people-discuss.png');
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: center;
-  background-attachment: local;
+@media (width > 30em) {
+  .bg-people-discuss {
+    background-image: url('/people-discuss.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-attachment: local;
+  
+  }
 }
+
 
 .bg-lay-down {
   background-image: url('/lay-down.png');

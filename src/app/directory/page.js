@@ -37,7 +37,7 @@ const countries = [
       {
         name: '	S.T.E.R (Stand to End Rape)',
         cause: 'Sexual Abuse',
-        phone: '',
+        phone: ' ',
         website: '',
         socialMedia: '@standtoendrape',
       },
@@ -115,13 +115,6 @@ const countries = [
         socialMedia: '',
       },
       {
-        name: 'Trevor Project',
-        cause: '',
-        phone: '866-488-7386 Trevor to 202-304-1200',
-        website: '',
-        socialMedia: '',
-      },
-      {
         name: 'Safe Horizon',
         cause: '',
         phone: '866-621-HOPE (4673)',
@@ -183,7 +176,7 @@ const countries = [
     ]
   },
   {
-    name: 'United Kingdowm',
+    name: 'United Kingdom',
     organizations: [
       {
         name: 'Samaritans',
@@ -219,13 +212,13 @@ export default function Page() {
                   <tbody>
                     <tr>
                       <th>Organization</th>
-                      <th className='d-none d-sm-block'>Cause</th>
+                      <th className='hide-mobile'>Cause</th>
                       <th>Contact</th>
                     </tr>
                     {country.organizations.map((organization) => (
                       <tr key={organization.name}>
                         <td>{organization.name}</td>
-                        <td className='d-none d-sm-block'>{organization.cause}</td>
+                        <td className='hide-mobile'>{organization.cause}</td>
                         <td>{organization.phone} {organization.website} {organization.socialMedia}</td>
                       </tr>
                     ))}
